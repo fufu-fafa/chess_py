@@ -1,7 +1,7 @@
 def print_board(board):
     """Prints the board in a readable format."""
     for row in board:
-        print(' '.join([f'{p[0][0]}({p[1][0]})' if p else '--' for p in row]))
+        print(' '.join([f'{p[0][0]}({p[1][0]})' if p else '----' for p in row]))
     print('\n')
 
 def parse_move(move):

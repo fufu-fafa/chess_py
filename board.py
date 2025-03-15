@@ -22,7 +22,7 @@ class Board:
     def display(self):
         """Prints the chessboard in a readable format."""
         for row in self.board:
-            print(' '.join([f'{p[0][0]}({p[1][0]})' if p else '--' for p in row]))
+            print(' '.join([f'{p[0][0]}({p[1][0]})' if p else '----' for p in row]))
         print('\n')
     
     def move_piece(self, start, end):
